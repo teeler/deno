@@ -1,1 +1,2 @@
-import "npm:@denotest/cjs-require-esm-error";
+import * as ns from "npm:@denotest/cjs-require-esm-error";
+console.log(ns);

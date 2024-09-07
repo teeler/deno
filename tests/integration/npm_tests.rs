@@ -63,7 +63,6 @@ itest!(cjs_require_esm_error {
   output: "npm/cjs_require_esm_error/main.out",
   envs: env_vars_for_npm_tests(),
   http_server: true,
-  exit_code: 1,
 });
 
 itest!(cjs_require_esm_mjs_error {
@@ -71,13 +70,11 @@ itest!(cjs_require_esm_mjs_error {
   output: "npm/cjs_require_esm_mjs_error/main.out",
   envs: env_vars_for_npm_tests(),
   http_server: true,
-  exit_code: 1,
 });
 
 itest!(require_esm_error {
   args: "run --allow-read --quiet node/require_esm_error/main.ts",
   output: "node/require_esm_error/main.out",
-  exit_code: 1,
 });
 
 itest!(dynamic_import_deno_ts_from_npm {
